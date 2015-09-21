@@ -30,7 +30,8 @@ dependencies:
 # https://circleci.com/docs/configuration#running-your-tests
 test:
   # commands run before CircleCI's inferred commands
-#  pre:
+  pre:
+    - echo 0
     # Handled automatically by CircleCI
     # - npm install
     # - bundle install
