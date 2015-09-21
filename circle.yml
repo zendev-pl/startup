@@ -22,10 +22,10 @@ dependencies:
     - mysql -u ubuntu -e "CREATE DATABASE zl_central_test"
     - mysql -u ubuntu -e "CREATE DATABASE geoapi_en"
     - mysql -u ubuntu -e "CREATE DATABASE geoapi_pl"
-  post:
     - composer config --global github-oauth.github.com $GITHUB_TOKEN
     - composer --version
     - composer install --prefer-source --no-interaction --optimize-autoloader
+#  post:
 #    Bootstrap application
 #    - php bin/phing -Dbuild.confirm=Y bootstrap
 
