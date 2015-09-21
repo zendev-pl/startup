@@ -40,7 +40,7 @@ test:
 #    - composer install -d dist --prefer-source --no-interaction --optimize-autoloader
 #    - composer install -d src --prefer-source --no-interaction --optimize-autoloader
   override:
-    - echo 0
+    - php -v
 
 # Deploying your code to your web servers
 # https://circleci.com/docs/configuration#deployment
