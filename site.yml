@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: local.z.pl
   sudo:  true
   vars:
     doc_root: /var/www/web
