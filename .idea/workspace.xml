@@ -2,33 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="322e8ae4-e290-4438-a49f-01d64a7bf32b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/composer/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/composer/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/curl/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/curl/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/git/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/git/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/init/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/init/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/memcached/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/memcached/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/mongo/handlers/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/mongo/handlers/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/mongo/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/mongo/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/mysql/handlers/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/mysql/handlers/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/mysql/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/mysql/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/nginx/handlers/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/nginx/handlers/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/nginx/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/nginx/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/nginx/templates/default.tpl" afterPath="$PROJECT_DIR$/ansible/roles/nginx/templates/default.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/php5-cli/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/php5-cli/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/php5-common/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/php5-common/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/php5-common/templates/extension.tpl" afterPath="$PROJECT_DIR$/ansible/roles/php5-common/templates/extension.tpl" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/php5-fpm/handlers/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/php5-fpm/handlers/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/php5-fpm/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/php5-fpm/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/php5-fpm/templates/php.ini" afterPath="$PROJECT_DIR$/ansible/roles/php5-fpm/templates/php.ini" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/phpunit/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/phpunit/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/rabbitmq/handlers/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/rabbitmq/handlers/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/rabbitmq/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/rabbitmq/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/redis/handlers/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/redis/handlers/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/redis/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/redis/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/sqlite/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/sqlite/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/roles/wget/tasks/main.yml" afterPath="$PROJECT_DIR$/ansible/roles/wget/tasks/main.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/site.yml" afterPath="$PROJECT_DIR$/ansible/site.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -65,8 +38,8 @@
       <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39724576">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.31779662">
+              <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -316,7 +289,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442838762762</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="composer install">
+      <created>1442840047341</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1442840047341</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -357,7 +336,8 @@
     <MESSAGE value="ansible" />
     <MESSAGE value="remove custom php.ini" />
     <MESSAGE value="php config" />
-    <option name="LAST_COMMIT_MESSAGE" value="php config" />
+    <MESSAGE value="composer install" />
+    <option name="LAST_COMMIT_MESSAGE" value="composer install" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -446,8 +426,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39724576">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.31779662">
+          <caret line="20" column="4" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
           <folding />
         </state>
       </provider>

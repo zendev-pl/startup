@@ -18,8 +18,9 @@ dependencies:
     - mysql -u ubuntu -e "CREATE DATABASE geoapi_en"
     - mysql -u ubuntu -e "CREATE DATABASE geoapi_pl"
   post:
-    - if [[ -n "$GITHUB_TOKEN" ]]; then php composer config --global github-oauth.github.com $GITHUB_TOKEN; fi
-    - php composer --version
+    - print $GITHUB_TOKEN
+    - composer config --global github-oauth.github.com $GITHUB_TOKEN
+    - composer --version
     - composer install
 # database:
 #  override:
