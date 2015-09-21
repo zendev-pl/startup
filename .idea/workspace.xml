@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="322e8ae4-e290-4438-a49f-01d64a7bf32b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="znany_startup.iws" />
@@ -342,7 +341,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442841674375</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="composer install">
+      <created>1442842501159</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1442842501159</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -383,10 +388,10 @@
     <MESSAGE value="ansible" />
     <MESSAGE value="remove custom php.ini" />
     <MESSAGE value="php config" />
-    <MESSAGE value="composer install" />
     <MESSAGE value="setup services" />
     <MESSAGE value="vendors checks" />
-    <option name="LAST_COMMIT_MESSAGE" value="vendors checks" />
+    <MESSAGE value="composer install" />
+    <option name="LAST_COMMIT_MESSAGE" value="composer install" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
