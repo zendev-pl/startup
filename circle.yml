@@ -3,6 +3,10 @@ machine:
     Europe/Warsaw
   hosts:
     local.z.pl: 127.0.0.1
+  services:
+    - memcached
+    - mongodb
+    - elasticsearch
 
 dependencies:
   pre:
@@ -18,7 +22,6 @@ dependencies:
     - mysql -u ubuntu -e "CREATE DATABASE geoapi_en"
     - mysql -u ubuntu -e "CREATE DATABASE geoapi_pl"
   post:
-    - print $GITHUB_TOKEN
     - composer config --global github-oauth.github.com $GITHUB_TOKEN
     - composer --version
     - composer install

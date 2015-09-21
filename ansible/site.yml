@@ -30,14 +30,9 @@
     - php5-fpm
     - php5-cli
     - php5-common
-#    - composer
+    - composer
     - phpunit
-#    - mysql
-#    - mongo
     - git
     - curl
     - sqlite
     - wget
-#    - rabbitmq
-#    - redis
-    - memcached
