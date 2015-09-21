@@ -9,7 +9,7 @@ machine:
 dependencies:
   # commands run before CircleCI's inferred commands
   pre:
-    - sudo apt-get update; sudo apt-get install -y python-software-properties; sudo add-apt-repository ppa:rquillo/ansible; sudo apt-get update; sudo apt-get install -y ansible
+    - sudo add-apt-repository ppa:rquillo/ansible; sudo apt-get update; sudo apt-get install -y ansible
     - ansible-playbook site.yml
     - mysql -u ubuntu -e "Create database z_trunk"
 #    - cp config/php/php.ini ~/.phpenv/versions/$(phpenv global)/etc/conf.d/
