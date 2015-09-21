@@ -7,6 +7,7 @@ machine:
     - memcached
     - mongodb
     - elasticsearch
+    - beanstalkd
 
 dependencies:
   pre:
@@ -24,27 +25,12 @@ dependencies:
   post:
     - composer config --global github-oauth.github.com $GITHUB_TOKEN
     - composer --version
-    - composer install
-# database:
-#  override:
-#    - mysql -u ubuntu symfony2_standard_template < src/craft/storage/backups/craft.sql
-
+    - composer install --prefer-source --no-interaction --optimize-autoloader
+#    Bootstrap application
+#    - php bin/phing -Dbuild.confirm=Y bootstrap
 
 test:
   pre:
     - php ./test.php
   override:
     - php -v
-
-# Deploying your code to your web servers
-# https://circleci.com/docs/configuration#deployment
-# deployment:
-#   production:
-#     branch: master
-#     commands:
-#       - git config --global user.email "team@newism.com.au"
-#       - git config --global user.name "newism-newbot"
-#       - git add ./dist -A
-#       - git commit -m "Build by Newbot via CircleCI"
-#       - git push origin master
-#       - cap production deploy
