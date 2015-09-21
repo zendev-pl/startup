@@ -5,42 +5,30 @@ machine:
     local.z.pl: 127.0.0.1
 
 dependencies:
-  # commands run before CircleCI's inferred commands
   pre:
     - sudo apt-get remove apache2*; sudo apt-get autoremove
     - sudo apt-get -y purge php.*
     - sudo add-apt-repository ppa:rquillo/ansible -y; sudo apt-get update; sudo apt-get install -y ansible
-    - ansible-playbook site.yml
-    - mysql -u ubuntu -e "Create database z_trunk"
-#    - cp config/php/php.ini ~/.phpenv/versions/$(phpenv global)/etc/conf.d/
-#  post:
-#    - cp config/apache/dist.vhost.conf /etc/apache2/sites-available
-#    - a2ensite dist.vhost.conf
-#    - cp config/apache/src.vhost.conf /etc/apache2/sites-available
-#    - a2ensite src.vhost.conf
-#    - a2enmod rewrite
-#    - a2enmod headers
-#    - sudo service apache2 restart
-
-# Preparing the databases for your tests
-# https://circleci.com/docs/configuration#database-setup
+    - ansible-playbook ./ansible/site.yml
+    - mysql -u ubuntu -e "CREATE DATABASE zl_general_en_test"
+    - mysql -u ubuntu -e "CREATE DATABASE zl_general_pl_test"
+    - mysql -u ubuntu -e "CREATE DATABASE zl_stats_en_test"
+    - mysql -u ubuntu -e "CREATE DATABASE zl_stats_pl_test"
+    - mysql -u ubuntu -e "CREATE DATABASE zl_central_test"
+    - mysql -u ubuntu -e "CREATE DATABASE geoapi_en"
+    - mysql -u ubuntu -e "CREATE DATABASE geoapi_pl"
+  post:
+    - if [[ -n "$GITHUB_TOKEN" ]]; then php composer config --global github-oauth.github.com $GITHUB_TOKEN; fi
+    - php composer --version
+    - composer install
 # database:
 #  override:
 #    - mysql -u ubuntu symfony2_standard_template < src/craft/storage/backups/craft.sql
 
-# Running your tests
-# https://circleci.com/docs/configuration#running-your-tests
+
 test:
-  # commands run before CircleCI's inferred commands
   pre:
     - php ./test.php
-    # Handled automatically by CircleCI
-    # - npm install
-    # - bundle install
-#    - bower install
-#    - grunt build --target=dist
-#    - composer install -d dist --prefer-source --no-interaction --optimize-autoloader
-#    - composer install -d src --prefer-source --no-interaction --optimize-autoloader
   override:
     - php -v
 
