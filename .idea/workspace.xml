@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="322e8ae4-e290-4438-a49f-01d64a7bf32b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site.yml" afterPath="$PROJECT_DIR$/site.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="znany_startup.iws" />
@@ -25,21 +26,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="circle.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.14300847">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="site.yml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="site.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/site.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state vertical-scroll-proportion="0.5243644">
+              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -66,8 +67,8 @@
         <option value="$PROJECT_DIR$/roles/nginx/templates/default.tpl" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/cricle.yml" />
-        <option value="$PROJECT_DIR$/site.yml" />
         <option value="$PROJECT_DIR$/circle.yml" />
+        <option value="$PROJECT_DIR$/site.yml" />
       </list>
     </option>
   </component>
@@ -300,7 +301,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442835077015</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="remove apache">
+      <created>1442835579957</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1442835579957</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -338,7 +345,8 @@
     <MESSAGE value="circle.yml - correct name" />
     <MESSAGE value="ansible" />
     <MESSAGE value="clear instnace" />
-    <option name="LAST_COMMIT_MESSAGE" value="clear instnace" />
+    <MESSAGE value="remove apache" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove apache" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -377,6 +385,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/circle.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.25">
@@ -387,16 +403,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/site.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/circle.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14300847">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+        <state vertical-scroll-proportion="0.5243644">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
           <folding />
         </state>
       </provider>
