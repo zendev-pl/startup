@@ -3,7 +3,11 @@
     sudo: yes
     apt:  package=php5-fpm state=latest
 
-#  - name: Change default php config
-#    sudo: yes
-#    template: src=php.ini dest=/etc/php5/fpm/php.ini
-#    notify: restart php5-fpm
+  - name: Change default php-cli config
+    sudo: yes
+    template: src=php.ini dest=/etc/php5/cli/php.ini
+
+  - name: Change default php-fpm config
+    sudo: yes
+    template: src=php.ini dest=/etc/php5/fpm/php.ini
+    notify: restart php5-fpm

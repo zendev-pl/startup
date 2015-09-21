@@ -8,6 +8,7 @@ dependencies:
   # commands run before CircleCI's inferred commands
   pre:
     - sudo apt-get remove apache2*; sudo apt-get autoremove
+    - sudo apt-get -y purge php.*
     - sudo add-apt-repository ppa:rquillo/ansible -y; sudo apt-get update; sudo apt-get install -y ansible
     - ansible-playbook site.yml
     - mysql -u ubuntu -e "Create database z_trunk"
