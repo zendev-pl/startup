@@ -33,7 +33,7 @@ dependencies:
 test:
   # commands run before CircleCI's inferred commands
   pre:
-    - echo 0
+    - php ./test.php
     # Handled automatically by CircleCI
     # - npm install
     # - bundle install
