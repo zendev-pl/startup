@@ -1,8 +1,6 @@
 machine:
   timezone:
     Europe/Warsaw
-  php:
-    version: 5.5.11
   hosts:
     local.z.pl: 127.0.0.1
 
