@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="322e8ae4-e290-4438-a49f-01d64a7bf32b" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cricle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/circle.yml" afterPath="$PROJECT_DIR$/circle.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="znany_startup.iws" />
@@ -28,8 +28,8 @@
       <file leaf-file-name="circle.yml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/circle.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2542373">
-              <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.17478813">
+              <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -56,6 +56,7 @@
         <option value="$PROJECT_DIR$/roles/nginx/templates/default.tpl" />
         <option value="$PROJECT_DIR$/test.php" />
         <option value="$PROJECT_DIR$/cricle.yml" />
+        <option value="$PROJECT_DIR$/circle.yml" />
       </list>
     </option>
   </component>
@@ -252,7 +253,19 @@
       <option name="project" value="LOCAL" />
       <updated>1442833755357</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="circle.yml - correct name">
+      <created>1442833847337</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1442833847337</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ansible">
+      <created>1442834250733</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1442834250733</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -287,7 +300,9 @@
     <MESSAGE value="tests" />
     <MESSAGE value="install ansible" />
     <MESSAGE value="run ansible" />
-    <option name="LAST_COMMIT_MESSAGE" value="run ansible" />
+    <MESSAGE value="circle.yml - correct name" />
+    <MESSAGE value="ansible" />
+    <option name="LAST_COMMIT_MESSAGE" value="ansible" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -344,8 +359,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/circle.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2542373">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.17478813">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding />
         </state>
       </provider>
