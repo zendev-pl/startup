@@ -37,12 +37,10 @@ dependencies:
     - composer config --global github-oauth.github.com $GITHUB_TOKEN
     - composer --version
     - composer install --prefer-source --no-interaction --optimize-autoloader
-#  post:
-#    Bootstrap application
-#    - php bin/phing -Dbuild.confirm=Y bootstrap
+  post:
+    # Bootstrap application
+    - php bin/phing -Dbuild.confirm=Y bootstrap
 
 test:
-  pre:
-    - php ./test.php
   override:
-    - php -v
+    - php -dmemory_limit=-1 bin/phpunit --testdox-text ./tests.log
