@@ -2,7 +2,7 @@
 
 require("vendor/autoload.php");
 $config['beanstalkd']['host'] = 'localhost';
-$config['beanstalkd']['port'] = 11300;
+$config['beanstalkd']['port'] = 11311;
 
 $queue =  new Pheanstalk_Pheanstalk($config['beanstalkd']['host'] . ":" . $config['beanstalkd']['port']);
 $queue->watch("mytube");
