@@ -22,7 +22,8 @@
     "gedmo/doctrine-extensions": "dev-master",
     "nelmio/alice": "1.7.*@dev",
     "whiteoctober/breadcrumbs-bundle": "dev-master",
-    "gregwar/image-bundle": "dev-master"
+    "gregwar/image-bundle": "dev-master",
+    "pda/pheanstalk": "2.1.0"
   },
   "config": {
     "bin-dir": "bin"
